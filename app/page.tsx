@@ -406,7 +406,7 @@ export default function Home() {
 
             <a
               className="secondary-button"
-              href="mailto:josemanuesuarez110@gmail.com"
+              href="mailto:josemanuelsuarez110@gmail.com"
             >
               Contact Me
             </a>
