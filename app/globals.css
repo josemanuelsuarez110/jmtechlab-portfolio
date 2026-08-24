@@ -301,3 +301,138 @@ footer {
     gap: 8px;
   }
 }
+
+/* Case Studies */
+
+.case-hero {
+  padding-top: 130px;
+  padding-bottom: 110px;
+}
+
+.case-hero h1 {
+  margin: 20px 0;
+  font-size: clamp(4rem, 11vw, 9rem);
+  line-height: .9;
+  letter-spacing: -.07em;
+}
+
+.case-intro {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.case-section {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 40px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  border-top: 1px solid var(--border);
+}
+
+.case-number {
+  color: #53606d;
+  font-size: .8rem;
+}
+
+.case-content {
+  max-width: 900px;
+}
+
+.case-content > h2 {
+  margin: 14px 0 30px;
+  max-width: 800px;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -.055em;
+}
+
+.case-content > p:not(.section-label) {
+  max-width: 750px;
+  color: var(--muted);
+  line-height: 1.9;
+  font-size: 1.02rem;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin-top: 35px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.case-grid article {
+  padding: 30px;
+  background: var(--background);
+}
+
+.case-grid h3 {
+  margin: 0 0 15px;
+  font-size: 1.1rem;
+}
+
+.case-grid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: .9rem;
+}
+
+.architecture {
+  display: grid;
+  gap: 1px;
+  margin-top: 35px;
+  border: 1px solid var(--border);
+  background: var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.architecture > div {
+  display: grid;
+  grid-template-columns: 50px 170px 1fr;
+  align-items: center;
+  padding: 22px 25px;
+  background: var(--background);
+}
+
+.architecture span {
+  color: var(--accent);
+  font-size: .72rem;
+}
+
+.architecture strong {
+  font-size: .95rem;
+}
+
+.architecture p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+@media (max-width: 700px) {
+  .case-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .architecture > div {
+    grid-template-columns: 35px 1fr;
+  }
+
+  .architecture p {
+    grid-column: 2;
+    margin-top: 7px;
+  }
+}

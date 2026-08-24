@@ -154,7 +154,15 @@ export default function Home() {
                   </a>
                 )}
 
-                <a href="#">Case Study →</a>
+                <a
+                  href={
+                    project.title === "QAForge AI"
+                      ? "/projects/qaforge-ai"
+                      : "#"
+                  }
+                >
+                  Case Study →
+                </a>
               </div>
             </article>
           ))}
