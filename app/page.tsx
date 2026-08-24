@@ -63,8 +63,13 @@ export default function Home() {
             <a href="#contact">Contact</a>
           </div>
 
-          <a className="nav-button" href="#contact">
-            Download CV
+          <a
+            className="nav-button"
+            href="https://linkedin.com/in/josemanuelsuarez110"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
           </a>
         </div>
       </nav>
@@ -255,8 +260,20 @@ export default function Home() {
               GitHub
             </a>
 
-            <a className="secondary-button" href="#contact">
+            <a
+              className="secondary-button"
+              href="mailto:josemanuesuarez110@gmail.com"
+            >
               Contact Me
+            </a>
+
+            <a
+              className="secondary-button"
+              href="https://linkedin.com/in/josemanuelsuarez110"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
             </a>
           </div>
         </div>
