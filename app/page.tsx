@@ -59,6 +59,7 @@ export default function Home() {
           <div className="nav-links">
             <a href="#projects">Projects</a>
             <a href="#expertise">Expertise</a>
+            <a href="#experience">Experience</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </div>
@@ -256,7 +257,7 @@ export default function Home() {
           <span>05</span>
           <div>
             <p className="section-label">PROFESSIONAL EXPERIENCE</p>
-            <h3>Technology, operations and financial management experience.</h3>
+            <h3>Experience connecting technology, controls and operational reliability.</h3>
           </div>
         </div>
 
@@ -268,7 +269,9 @@ export default function Home() {
             </div>
             <p>
               Managed treasury operations, budgets, financial controls,
-              institutional reporting, compliance support and audit readiness.
+              reporting and audit readiness in a regulated public-sector
+              environment, strengthening process discipline, traceability and
+              risk awareness.
             </p>
           </article>
 
@@ -279,7 +282,8 @@ export default function Home() {
             </div>
             <p>
               Supported institutional databases, digital records, technical
-              operations, reporting and information-management processes.
+              operations and reporting workflows, combining systems support
+              with structured information management and process reliability.
             </p>
           </article>
 
@@ -289,8 +293,9 @@ export default function Home() {
               <h4>Administrative Manager · P&amp;B Company</h4>
             </div>
             <p>
-              Oversaw administrative operations, documentation, internal
-              reporting, financial tracking and business controls.
+              Oversaw administrative operations, documentation, financial
+              tracking and internal controls, developing a strong foundation in
+              process management, verification and operational consistency.
             </p>
           </article>
         </div>
@@ -301,7 +306,7 @@ export default function Home() {
           <span>06</span>
           <div>
             <p className="section-label">CERTIFICATIONS & TRAINING</p>
-            <h3>Continuous training in security, quality and technology.</h3>
+            <h3>Continuous technical development in security, quality and engineering.</h3>
           </div>
         </div>
 
@@ -387,13 +392,16 @@ export default function Home() {
 
       <section className="contact-section" id="contact">
         <div className="container contact-content">
-          <p className="section-label">AVAILABLE FOR REMOTE OPPORTUNITIES</p>
+          <p className="section-label">
+            OPEN TO REMOTE QA AUTOMATION & SDET OPPORTUNITIES
+          </p>
 
-          <h3>Let&apos;s build reliable software.</h3>
+          <h3>Need an engineer who builds quality into the product?</h3>
 
           <p>
-            Interested in QA Automation, SDET, software engineering and
-            technology projects.
+            Available for QA Automation, SDET and quality engineering roles,
+            with hands-on experience across automated testing, software
+            development, CI/CD, APIs and secure engineering.
           </p>
 
           <div className="hero-actions">
