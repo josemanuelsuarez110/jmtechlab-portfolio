@@ -18,13 +18,13 @@ const projects = [
     github: "https://github.com/josemanuelsuarez110/qa-sentinel-platform",
   },
   {
-    title: "SentinelX",
+    title: "Suarez Consultoría Premium",
     description:
-      "Security-focused dashboard for monitoring events, anomalies and technical risk indicators.",
-    stack: ["Next.js", "TypeScript", "PostgreSQL", "Security"],
-    type: "Cybersecurity · Engineering",
-    demo: "https://sentinelx-security-dashboard.vercel.app",
-    github: "",
+      "Corporate consulting platform designed, developed and deployed as a complete professional web presence.",
+    stack: ["Next.js", "TypeScript", "Web Engineering", "Vercel"],
+    type: "Consulting · Web Engineering",
+    demo: "https://suarez-consultoria.vercel.app",
+    github: "https://github.com/josemanuelsuarez110/suarez-executive-cyber-platform",
   },
 ];
 
