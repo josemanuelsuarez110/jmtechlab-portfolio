@@ -18,13 +18,13 @@ const projects = [
     github: "https://github.com/josemanuelsuarez110/qa-sentinel-platform",
   },
   {
-    title: "Suarez Consultoría Premium",
+    title: "Zero Trust API Financiera",
     description:
-      "Corporate consulting platform designed, developed and deployed as a complete professional web presence.",
-    stack: ["Next.js", "TypeScript", "Web Engineering", "Vercel"],
-    type: "Consulting · Web Engineering",
-    demo: "https://suarez-consultoria-premium-5rffsdhun.vercel.app",
-    github: "https://github.com/josemanuelsuarez110/suarez-consultoria-premium",
+      "Security-focused financial API demonstrating Zero Trust architecture, access control and defensive backend engineering.",
+    stack: ["Security", "API", "Zero Trust", "DevSecOps"],
+    type: "Security · Backend Engineering",
+    demo: "https://zero-trust-api-financiera.vercel.app",
+    github: "https://github.com/josemanuelsuarez110/zero-trust-api-financiera",
   },
 ];
 
@@ -79,14 +79,14 @@ export default function Home() {
         <h1>José Manuel Suárez</h1>
 
         <h2>
-          QA Automation Engineer
-          <span> / Software Engineer</span>
+          QA Automation Engineer / SDET
+          <span> · Software Engineer</span>
         </h2>
 
         <p className="hero-description">
-          I build reliable software, automated testing systems and intelligent
-          engineering solutions with a strong focus on quality, scalability and
-          continuous delivery.
+          I design and build automated testing systems, quality engineering
+          platforms and reliable software using Playwright, TypeScript, Python,
+          CI/CD and AI-assisted engineering.
         </p>
 
         <div className="hero-actions">
@@ -160,6 +160,8 @@ export default function Home() {
                       ? "/projects/qaforge-ai"
                       : project.title === "QA Sentinel"
                       ? "/projects/qa-sentinel"
+                      : project.title === "Zero Trust API Financiera"
+                      ? "/projects/zero-trust-api"
                       : "#"
                   }
                 >
