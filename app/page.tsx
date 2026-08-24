@@ -332,6 +332,57 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="section container" id="business-projects">
+        <div className="section-heading">
+          <span>07</span>
+          <div>
+            <p className="section-label">BUSINESS & CONSULTING PROJECTS</p>
+            <h3>Production work beyond QA engineering.</h3>
+          </div>
+        </div>
+
+        <div className="projects-grid business-project-grid">
+          <article className="project-card business-project-card">
+            <p className="project-type">CONSULTING · WEB ENGINEERING</p>
+
+            <h4>Suarez Consultoría Premium</h4>
+
+            <p className="project-description">
+              Corporate consulting platform designed, developed and deployed
+              as a complete professional web presence, combining modern
+              frontend engineering, content architecture and production
+              deployment.
+            </p>
+
+            <div className="stack">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Web Engineering</span>
+              <span>Vercel</span>
+            </div>
+
+            <div className="project-links">
+              <a
+                href="https://suarez-consultoria.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Website ↗
+              </a>
+
+              <a
+                href="https://github.com/josemanuelsuarez110/suarez-executive-cyber-platform"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section className="contact-section" id="contact">
         <div className="container contact-content">
           <p className="section-label">AVAILABLE FOR REMOTE OPPORTUNITIES</p>

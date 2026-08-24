@@ -523,3 +523,12 @@ footer {
     gap: 12px;
   }
 }
+
+.business-project-grid {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 760px;
+}
+
+.business-project-card {
+  min-height: 360px;
+}
