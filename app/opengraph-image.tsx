@@ -1,6 +1,5 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
 
 export const alt = "JMTechLab - José Manuel Suárez";
 export const size = {
