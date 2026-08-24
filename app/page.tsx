@@ -248,6 +248,90 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="section container" id="experience">
+        <div className="section-heading">
+          <span>05</span>
+          <div>
+            <p className="section-label">PROFESSIONAL EXPERIENCE</p>
+            <h3>Technology, operations and financial management experience.</h3>
+          </div>
+        </div>
+
+        <div className="experience-list">
+          <article className="experience-item">
+            <div>
+              <p className="experience-date">2020 — 2025</p>
+              <h4>Treasurer · Local Government</h4>
+            </div>
+            <p>
+              Managed treasury operations, budgets, financial controls,
+              institutional reporting, compliance support and audit readiness.
+            </p>
+          </article>
+
+          <article className="experience-item">
+            <div>
+              <p className="experience-date">2009 — 2019</p>
+              <h4>Information Systems & Administrative Officer</h4>
+            </div>
+            <p>
+              Supported institutional databases, digital records, technical
+              operations, reporting and information-management processes.
+            </p>
+          </article>
+
+          <article className="experience-item">
+            <div>
+              <p className="experience-date">2003 — 2008</p>
+              <h4>Administrative Manager · P&amp;B Company</h4>
+            </div>
+            <p>
+              Oversaw administrative operations, documentation, internal
+              reporting, financial tracking and business controls.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section className="section container" id="certifications">
+        <div className="section-heading">
+          <span>06</span>
+          <div>
+            <p className="section-label">CERTIFICATIONS & TRAINING</p>
+            <h3>Continuous training in security, quality and technology.</h3>
+          </div>
+        </div>
+
+        <div className="certifications-grid">
+          <article className="certification-card featured-cert">
+            <p className="project-type">CYBERSECURITY · 80 HOURS</p>
+            <h4>Cybersecurity — Advanced Level</h4>
+            <p>
+              INDOTEL · Inter-American Development Bank (IDB) · Cymetria Group SAS
+            </p>
+            <span>Issued August 2026</span>
+          </article>
+
+          <article className="certification-card featured-cert">
+            <p className="project-type">CYBERSECURITY · 80 HOURS</p>
+            <h4>Cybersecurity — Intermediate Level</h4>
+            <p>
+              INDOTEL · Inter-American Development Bank (IDB) · Cymetria Group SAS
+            </p>
+            <span>Issued April 2026</span>
+          </article>
+
+          <article className="certification-card">
+            <h4>Additional Training</h4>
+            <p>
+              ISO 27001 · Ethical Hacking · Cisco Cybersecurity · AI Fundamentals
+              · Linux · Quality and technology training.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section className="contact-section" id="contact">
         <div className="container contact-content">
           <p className="section-label">AVAILABLE FOR REMOTE OPPORTUNITIES</p>
