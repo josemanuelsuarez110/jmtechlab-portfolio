@@ -340,6 +340,55 @@ export default function Home() {
       </section>
 
 
+
+      <section className="section container" id="why-hire-me">
+        <div className="section-heading">
+          <span>07</span>
+          <div>
+            <p className="section-label">VALUE PROPOSITION</p>
+            <h3>Why I bring more than test execution.</h3>
+          </div>
+        </div>
+
+        <div className="case-grid">
+          <article>
+            <h3>QA + Engineering</h3>
+            <p>
+              I approach quality from both sides: automated testing and software
+              development. This helps me understand failures at the application,
+              API and system level instead of treating testing as an isolated step.
+            </p>
+          </article>
+
+          <article>
+            <h3>End-to-End Thinking</h3>
+            <p>
+              My projects combine Playwright, APIs, databases, CI/CD and
+              deployment, demonstrating an SDET mindset across the full software
+              delivery lifecycle.
+            </p>
+          </article>
+
+          <article>
+            <h3>Risk & Control Mindset</h3>
+            <p>
+              Experience in systems, financial controls and regulated operational
+              environments gives me a strong focus on traceability, validation,
+              reliability and risk awareness.
+            </p>
+          </article>
+
+          <article>
+            <h3>Security Awareness</h3>
+            <p>
+              Cybersecurity training and projects such as Zero Trust API strengthen
+              my ability to think beyond functional correctness and consider secure
+              software behavior.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section className="section container" id="business-projects">
         <div className="section-heading">
           <span>07</span>
