@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JMTechLab Portfolio
 
-## Getting Started
+Professional engineering portfolio of **José Manuel Suárez**, focused on QA Automation, SDET, Software Engineering, AI and Cybersecurity.
 
-First, run the development server:
+## Live Site
+
+https://jmtechlab.do
+
+## Professional Focus
+
+- QA Automation Engineering
+- SDET / Quality Engineering
+- End-to-End Testing
+- API Testing
+- CI/CD
+- Full-Stack Engineering
+- AI-assisted Automation
+- Secure Software Engineering
+
+## Featured Projects
+
+### QAForge AI
+AI-powered QA automation platform combining software testing, backend services, data and intelligent automation.
+
+- Demo: https://qaforge-ai-psi.vercel.app
+- Case Study: https://jmtechlab.do/projects/qaforge-ai
+- GitHub: https://github.com/josemanuelsuarez110/qaforge-ai
+
+### QA Sentinel Platform
+Full-stack quality engineering platform demonstrating automated testing, CI/CD, Playwright, Jest and application architecture.
+
+- Demo: https://qa-sentinel-platform.vercel.app
+- Case Study: https://jmtechlab.do/projects/qa-sentinel
+- GitHub: https://github.com/josemanuelsuarez110/qa-sentinel-platform
+
+### Zero Trust API Financiera
+Security-oriented API project demonstrating Zero Trust principles, access control, backend engineering and defensive software design.
+
+- Demo: https://zero-trust-api-financiera.vercel.app
+- Case Study: https://jmtechlab.do/projects/zero-trust-api
+- GitHub: https://github.com/josemanuelsuarez110/zero-trust-api-financiera
+
+## Technology Stack
+
+### QA
+- Playwright
+- Jest
+- E2E Testing
+- API Testing
+- Regression Testing
+- CI/CD
+
+### Development
+- Next.js
+- React
+- TypeScript
+- JavaScript
+- Python
+- FastAPI
+- Express
+
+### Data & Infrastructure
+- PostgreSQL
+- Supabase
+- Docker
+- GitHub Actions
+- Vercel
+- Linux
+
+### Security & AI
+- Zero Trust
+- OWASP
+- DevSecOps
+- Cybersecurity
+- LLM-assisted workflows
+- AI Automation
+
+## Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev -- --webpack
+npm run build -- --webpack
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project is deployed with Vercel and connected to:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+https://jmtechlab.do
 
-## Learn More
+Production deployments are triggered from the `main` branch.
 
-To learn more about Next.js, take a look at the following resources:
+## Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**José Manuel Suárez**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Website: https://jmtechlab.do
+- GitHub: https://github.com/josemanuelsuarez110
+- LinkedIn: https://linkedin.com/in/josemanuelsuarez110
+- Email: josemanuelsuarez110@gmail.com
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built as a practical demonstration of QA Automation, SDET and software engineering.
