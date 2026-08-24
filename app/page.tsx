@@ -158,6 +158,8 @@ export default function Home() {
                   href={
                     project.title === "QAForge AI"
                       ? "/projects/qaforge-ai"
+                      : project.title === "QA Sentinel"
+                      ? "/projects/qa-sentinel"
                       : "#"
                   }
                 >
