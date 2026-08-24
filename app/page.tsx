@@ -23,8 +23,8 @@ const projects = [
       "Corporate consulting platform designed, developed and deployed as a complete professional web presence.",
     stack: ["Next.js", "TypeScript", "Web Engineering", "Vercel"],
     type: "Consulting · Web Engineering",
-    demo: "https://suarez-consultoria.vercel.app",
-    github: "https://github.com/josemanuelsuarez110/suarez-executive-cyber-platform",
+    demo: "https://suarez-consultoria-premium-5rffsdhun.vercel.app",
+    github: "https://github.com/josemanuelsuarez110/suarez-consultoria-premium",
   },
 ];
 
@@ -364,7 +364,7 @@ export default function Home() {
 
             <div className="project-links">
               <a
-                href="https://suarez-consultoria.vercel.app"
+                href="https://suarez-consultoria-premium-5rffsdhun.vercel.app"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -372,7 +372,7 @@ export default function Home() {
               </a>
 
               <a
-                href="https://github.com/josemanuelsuarez110/suarez-executive-cyber-platform"
+                href="https://github.com/josemanuelsuarez110/suarez-consultoria-premium"
                 target="_blank"
                 rel="noreferrer"
               >
