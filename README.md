@@ -103,3 +103,11 @@ Production deployments are triggered from the `main` branch.
 ---
 
 Built as a practical demonstration of QA Automation, SDET and software engineering.
+
+## Copyright
+
+Copyright © 2026 José Manuel Suárez / JMTechLab. All Rights Reserved.
+
+This project, including its source code, design, documentation, branding and original content, is proprietary. No permission is granted to copy, modify, distribute, publish or reuse substantial portions without prior written authorization.
+
+For permission requests: josemanuelsuarez110@gmail.com

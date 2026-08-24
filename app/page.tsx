@@ -484,7 +484,7 @@ export default function Home() {
 
       <footer>
         <div className="container footer-content">
-          <span>JMTechLab.do</span>
+          <span>© 2026 José Manuel Suárez / JMTechLab. All Rights Reserved.</span>
           <span>Engineering · QA · Automation · AI</span>
         </div>
       </footer>
