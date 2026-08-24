@@ -5,7 +5,7 @@ const projects = [
       "AI-powered QA automation platform for designing, executing and analyzing software tests.",
     stack: ["Playwright", "FastAPI", "Supabase", "AI"],
     type: "QA Automation · AI",
-    demo: "https://qaforge-ai-rszs.vercel.app",
+    demo: "https://qaforge-ai-psi.vercel.app",
     github: "https://github.com/josemanuelsuarez110/qaforge-ai",
   },
   {

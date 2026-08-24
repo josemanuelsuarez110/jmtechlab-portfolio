@@ -45,7 +45,7 @@ export default function QAForgeCaseStudy() {
         <div className="hero-actions">
           <a
             className="primary-button"
-            href="https://qaforge-ai-rszs.vercel.app"
+            href="https://qaforge-ai-psi.vercel.app"
             target="_blank"
             rel="noreferrer"
           >
@@ -272,7 +272,7 @@ export default function QAForgeCaseStudy() {
           <div className="hero-actions">
             <a
               className="primary-button"
-              href="https://qaforge-ai-rszs.vercel.app"
+              href="https://qaforge-ai-psi.vercel.app"
               target="_blank"
               rel="noreferrer"
             >
