@@ -5,6 +5,8 @@ const projects = [
       "AI-powered QA automation platform for designing, executing and analyzing software tests.",
     stack: ["Playwright", "FastAPI", "Supabase", "AI"],
     type: "QA Automation · AI",
+    demo: "https://qaforge-ai-rszs.vercel.app",
+    github: "https://github.com/josemanuelsuarez110/qaforge-ai",
   },
   {
     title: "QA Sentinel",
@@ -12,6 +14,8 @@ const projects = [
       "Full-stack quality engineering platform focused on automated testing, CI/CD and execution visibility.",
     stack: ["Next.js", "Express", "Playwright", "Jest"],
     type: "SDET · Automation",
+    demo: "https://qa-sentinel-platform.vercel.app",
+    github: "https://github.com/josemanuelsuarez110/qa-sentinel-platform",
   },
   {
     title: "SentinelX",
@@ -19,6 +23,8 @@ const projects = [
       "Security-focused dashboard for monitoring events, anomalies and technical risk indicators.",
     stack: ["Next.js", "TypeScript", "PostgreSQL", "Security"],
     type: "Cybersecurity · Engineering",
+    demo: "https://sentinelx-security-dashboard.vercel.app",
+    github: "",
   },
 ];
 
@@ -126,8 +132,24 @@ export default function Home() {
               </div>
 
               <div className="project-links">
-                <a href="#">Live Demo ↗</a>
-                <a href="#">GitHub ↗</a>
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Demo ↗
+                </a>
+
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub ↗
+                  </a>
+                )}
+
                 <a href="#">Case Study →</a>
               </div>
             </article>
