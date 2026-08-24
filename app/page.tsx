@@ -65,11 +65,10 @@ export default function Home() {
 
           <a
             className="nav-button"
-            href="https://linkedin.com/in/josemanuelsuarez110"
-            target="_blank"
-            rel="noreferrer"
+            href="/Jose-Manuel-Suarez-CV-English.pdf"
+            download
           >
-            LinkedIn
+            Download CV
           </a>
         </div>
       </nav>
