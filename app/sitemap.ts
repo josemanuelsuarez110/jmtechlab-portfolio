@@ -10,6 +10,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${baseUrl}/projects/suarez-ai-audit`,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/projects/qaforge-ai`,
       changeFrequency: "monthly",
       priority: 0.9,

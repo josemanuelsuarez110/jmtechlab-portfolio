@@ -1,5 +1,14 @@
 const projects = [
   {
+    title: "Suarez AI Audit",
+    description:
+      "Enterprise audit, transaction intelligence and risk-management platform with RBAC, audit trails and automated quality gates.",
+    stack: ["React", "Supabase", "Playwright", "PostgreSQL"],
+    type: "Audit Intelligence · Risk · QA",
+    demo: "https://suarez-ai-audit.vercel.app",
+    github: "https://github.com/josemanuelsuarez110/suarez-ai-audit",
+  },
+  {
     title: "QAForge AI",
     description:
       "AI-powered QA automation platform for designing, executing and analyzing software tests.",
@@ -157,7 +166,9 @@ export default function Home() {
 
                 <a
                   href={
-                    project.title === "QAForge AI"
+                    project.title === "Suarez AI Audit"
+                      ? "/projects/suarez-ai-audit"
+                      : project.title === "QAForge AI"
                       ? "/projects/qaforge-ai"
                       : project.title === "QA Sentinel"
                       ? "/projects/qa-sentinel"
