@@ -222,6 +222,76 @@ export default function ZeroTrustCaseStudy() {
       <section className="case-section container">
         <div className="case-number">06</div>
         <div className="case-content">
+          <p className="section-label">SECURITY VERIFICATION</p>
+
+          <h2>Automated proof that access control is enforced.</h2>
+
+          <div className="case-grid">
+            <article>
+              <h3>401 Without JWT</h3>
+              <p>
+                Protected transaction endpoints reject requests that do not
+                provide an Authorization Bearer token.
+              </p>
+            </article>
+
+            <article>
+              <h3>403 Invalid JWT</h3>
+              <p>
+                Invalid or malformed tokens are rejected before any database
+                access is attempted.
+              </p>
+            </article>
+
+            <article>
+              <h3>Branch Isolation</h3>
+              <p>
+                The gerente10 role was verified against 50 returned records,
+                with every transaction restricted to sucursal_id 10.
+              </p>
+            </article>
+
+            <article>
+              <h3>Regional Auditor Access</h3>
+              <p>
+                The auditor_regional role was verified with multi-branch
+                visibility while PostgreSQL RLS remained the authorization
+                boundary.
+              </p>
+            </article>
+          </div>
+
+          <div className="architecture">
+            <div>
+              <span>01</span>
+              <strong>JWT</strong>
+              <p>Authenticated identity established</p>
+            </div>
+
+            <div>
+              <span>02</span>
+              <strong>Role Context</strong>
+              <p>Application role injected into PostgreSQL</p>
+            </div>
+
+            <div>
+              <span>03</span>
+              <strong>RLS</strong>
+              <p>Database filters rows according to authorization policy</p>
+            </div>
+
+            <div>
+              <span>04</span>
+              <strong>Automated Test</strong>
+              <p>Security behavior verified end-to-end in production</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="case-section container">
+        <div className="case-number">07</div>
+        <div className="case-content">
           <p className="section-label">TECHNOLOGY</p>
           <h2>Technology stack.</h2>
 
@@ -234,7 +304,7 @@ export default function ZeroTrustCaseStudy() {
       </section>
 
       <section className="case-section container">
-        <div className="case-number">07</div>
+        <div className="case-number">08</div>
         <div className="case-content">
           <p className="section-label">OUTCOME</p>
           <h2>A portfolio project combining backend engineering and security.</h2>
