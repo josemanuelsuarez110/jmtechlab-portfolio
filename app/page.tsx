@@ -1,39 +1,43 @@
 const projects = [
   {
+    title: "QA Sentinel",
+    description:
+      "Production-deployed SDET platform demonstrating Playwright E2E automation, CI/CD quality gates, API testing and full-stack test execution visibility.",
+    stack: ["Playwright", "Jest", "Next.js", "Express", "CI/CD"],
+    type: "SDET · Test Automation · CI/CD",
+    demo: "https://qa-sentinel-platform.vercel.app",
+    github: "https://github.com/josemanuelsuarez110/qa-sentinel-platform",
+    caseStudy: "/projects/qa-sentinel",
+  },
+  {
     title: "Suarez AI Audit",
     description:
-      "Enterprise audit, transaction intelligence and risk-management platform with RBAC, audit trails and automated quality gates.",
-    stack: ["React", "Supabase", "Playwright", "PostgreSQL"],
-    type: "Audit Intelligence · Risk · QA",
+      "Enterprise audit and risk platform validated with automated E2E tests, RBAC coverage, transaction workflows and production quality gates.",
+    stack: ["Playwright", "React", "Supabase", "PostgreSQL", "RBAC"],
+    type: "Enterprise QA · Audit · Risk",
     demo: "https://suarez-ai-audit.vercel.app",
     github: "https://github.com/josemanuelsuarez110/suarez-ai-audit",
+    caseStudy: "/projects/suarez-ai-audit",
   },
   {
     title: "QAForge AI",
     description:
-      "AI-powered QA automation platform for designing, executing and analyzing software tests.",
-    stack: ["Playwright", "FastAPI", "Supabase", "AI"],
-    type: "QA Automation · AI",
+      "AI-assisted QA engineering platform combining test design, execution workflows, backend APIs and automated quality engineering with Playwright.",
+    stack: ["Playwright", "FastAPI", "Supabase", "Python", "AI"],
+    type: "QA Automation · AI Engineering",
     demo: "https://qaforge-ai-psi.vercel.app",
     github: "https://github.com/josemanuelsuarez110/qaforge-ai",
-  },
-  {
-    title: "QA Sentinel",
-    description:
-      "Full-stack quality engineering platform focused on automated testing, CI/CD and execution visibility.",
-    stack: ["Next.js", "Express", "Playwright", "Jest"],
-    type: "SDET · Automation",
-    demo: "https://qa-sentinel-platform.vercel.app",
-    github: "https://github.com/josemanuelsuarez110/qa-sentinel-platform",
+    caseStudy: "/projects/qaforge-ai",
   },
   {
     title: "Zero Trust API Financiera",
     description:
-      "Production-deployed Zero Trust financial API with JWT authentication, Neon PostgreSQL RLS and automated security verification.",
-    stack: ["Zero Trust", "JWT", "PostgreSQL RLS", "Neon", "Express"],
-    type: "Security · Backend Engineering",
+      "Production security API with JWT authentication, PostgreSQL Row-Level Security, automated authorization tests and verified Zero-Trust controls.",
+    stack: ["JWT", "PostgreSQL RLS", "Neon", "Express", "Security Testing"],
+    type: "API Security · Backend · Testing",
     demo: "https://zero-trust-api-financiera.vercel.app",
     github: "https://github.com/josemanuelsuarez110/zero-trust-api-financiera",
+    caseStudy: "/projects/zero-trust-api",
   },
 ];
 
@@ -90,18 +94,26 @@ export default function Home() {
 
         <h2>
           QA Automation Engineer / SDET
-          <span> · Software Engineer</span>
+          <span> · Systems Engineer</span>
         </h2>
 
         <p className="hero-description">
-          I design and build automated testing systems, quality engineering
-          platforms and reliable software using Playwright, TypeScript, Python,
-          CI/CD and AI-assisted engineering.
+          I build production-grade test automation, CI/CD pipelines and quality
+          engineering platforms using Playwright, TypeScript, Python and modern
+          software engineering practices.
         </p>
 
         <div className="hero-actions">
           <a className="primary-button" href="#projects">
-            View Projects
+            View Engineering Projects
+          </a>
+
+          <a
+            className="secondary-button"
+            href="/Jose-Manuel-Suarez-CV-English.pdf"
+            download
+          >
+            Download CV
           </a>
 
           <a
@@ -110,16 +122,16 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            GitHub
+            GitHub ↗
           </a>
         </div>
 
         <div className="hero-meta">
-          <span>QA Automation</span>
-          <span>Playwright</span>
-          <span>Next.js</span>
-          <span>Python</span>
-          <span>AI</span>
+          <span>Playwright E2E</span>
+          <span>API Testing</span>
+          <span>CI/CD</span>
+          <span>TypeScript · Python</span>
+          <span>Production Projects</span>
         </div>
       </section>
 
@@ -165,19 +177,10 @@ export default function Home() {
                 )}
 
                 <a
-                  href={
-                    project.title === "Suarez AI Audit"
-                      ? "/projects/suarez-ai-audit"
-                      : project.title === "QAForge AI"
-                      ? "/projects/qaforge-ai"
-                      : project.title === "QA Sentinel"
-                      ? "/projects/qa-sentinel"
-                      : project.title === "Zero Trust API Financiera"
-                      ? "/projects/zero-trust-api"
-                      : "#"
-                  }
+                  className="case-study-link"
+                  href={project.caseStudy}
                 >
-                  Case Study →
+                  View Case Study →
                 </a>
               </div>
             </article>
@@ -402,7 +405,7 @@ export default function Home() {
 
       <section className="section container" id="business-projects">
         <div className="section-heading">
-          <span>07</span>
+          <span>08</span>
           <div>
             <p className="section-label">BUSINESS & CONSULTING PROJECTS</p>
             <h3>Production work beyond QA engineering.</h3>
