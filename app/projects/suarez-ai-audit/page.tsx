@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Image from "next/image";
 
 export const metadata = {
@@ -57,13 +59,13 @@ export default function SuarezAIAuditCaseStudy() {
     <main>
       <nav className="nav">
         <div className="container nav-content">
-          <a className="brand" href="/">
+          <Link className="brand" href="/">
             JMTechLab<span>.</span>
-          </a>
+          </Link>
 
-          <a className="secondary-button" href="/#projects">
+          <Link className="secondary-button" href="/#projects">
             ← Back to Projects
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -402,7 +404,7 @@ export default function SuarezAIAuditCaseStudy() {
       <footer>
         <div className="container footer-content">
           <span>JMTechLab.do</span>
-          <a href="/#projects">← All Projects</a>
+          <Link href="/#projects">← All Projects</Link>
         </div>
       </footer>
     </main>

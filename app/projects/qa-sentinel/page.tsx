@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "QA Sentinel Platform | Case Study | JMTechLab",
   description:
@@ -22,13 +24,13 @@ export default function QASentinelCaseStudy() {
     <main>
       <nav className="nav">
         <div className="container nav-content">
-          <a className="brand" href="/">
+          <Link className="brand" href="/">
             JMTechLab<span>.</span>
-          </a>
+          </Link>
 
-          <a className="secondary-button" href="/#projects">
+          <Link className="secondary-button" href="/#projects">
             ← Back to Projects
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -344,7 +346,7 @@ export default function QASentinelCaseStudy() {
       <footer>
         <div className="container footer-content">
           <span>JMTechLab.do</span>
-          <a href="/#projects">← All Projects</a>
+          <Link href="/#projects">← All Projects</Link>
         </div>
       </footer>
     </main>

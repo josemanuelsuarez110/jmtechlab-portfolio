@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Zero Trust API Financiera | Case Study | JMTechLab",
   description:
@@ -21,13 +23,13 @@ export default function ZeroTrustCaseStudy() {
     <main>
       <nav className="nav">
         <div className="container nav-content">
-          <a className="brand" href="/">
+          <Link className="brand" href="/">
             JMTechLab<span>.</span>
-          </a>
+          </Link>
 
-          <a className="secondary-button" href="/#projects">
+          <Link className="secondary-button" href="/#projects">
             ← Back to Projects
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -383,7 +385,7 @@ export default function ZeroTrustCaseStudy() {
       <footer>
         <div className="container footer-content">
           <span>JMTechLab.do</span>
-          <a href="/#projects">← All Projects</a>
+          <Link href="/#projects">← All Projects</Link>
         </div>
       </footer>
     </main>
