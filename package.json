@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:production": "node scripts/production-smoke.mjs"
   },
   "dependencies": {
     "next": "16.3.2",
