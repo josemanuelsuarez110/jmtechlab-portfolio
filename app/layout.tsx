@@ -4,16 +4,21 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://jmtechlab.do"),
   title: {
-    default: "José Manuel Suárez | QA Automation Engineer | JMTechLab",
+    default: "José Manuel Suárez | QA Automation Engineer / SDET",
     template: "%s | JMTechLab",
   },
   description:
-    "Portfolio of José Manuel Suárez, QA Automation Engineer and Systems Engineer focused on SDET, Playwright, software quality, AI and secure software engineering.",
+    "QA Automation Engineer and SDET portfolio featuring production projects in Playwright, API testing, CI/CD, TypeScript, Python, quality engineering and secure software development.",
   keywords: [
     "José Manuel Suárez",
     "QA Automation Engineer",
     "SDET",
+    "Remote QA Engineer",
+    "Test Automation",
     "Playwright",
+    "API Testing",
+    "E2E Testing",
+    "CI/CD",
     "Software Testing",
     "QA Engineer",
     "Next.js",
