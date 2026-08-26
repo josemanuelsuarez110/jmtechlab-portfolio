@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - security-v2
+      - ci-security-v2
   pull_request:
     branches:
       - main
@@ -25,6 +26,28 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Check tracked environment files
+        run: |
+          if git ls-files | grep -Eq '(^|/)\.env($|\.)'; then
+            echo "ERROR: tracked environment file detected"
+            git ls-files | grep -E '(^|/)\.env($|\.)'
+            exit 1
+          fi
+
+      - name: Check tracked node_modules
+        run: |
+          if git ls-files | grep -q '^node_modules/'; then
+            echo "ERROR: node_modules is tracked"
+            exit 1
+          fi
+
+      - name: Check backup files
+        run: |
+          if git ls-files | grep -Ei '\.(bak|backup|old|orig)$|before-'; then
+            echo "ERROR: backup file detected"
+            exit 1
+          fi
 
       - name: Dependency audit
         run: npm audit --audit-level=high
