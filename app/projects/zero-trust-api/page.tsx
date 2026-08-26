@@ -5,14 +5,14 @@ export const metadata = {
 };
 
 const technologies = [
-  "API Security",
   "Zero Trust",
-  "Authentication",
-  "Authorization",
+  "API Security",
+  "Node.js",
+  "Express",
+  "JWT",
   "PostgreSQL",
-  "Supabase",
-  "TypeScript",
-  "Next.js",
+  "Neon",
+  "Row-Level Security",
   "Vercel",
 ];
 
@@ -37,9 +37,9 @@ export default function ZeroTrustCaseStudy() {
         <h1>Zero Trust API</h1>
 
         <p className="case-intro">
-          A security-oriented financial API project designed to demonstrate
-          identity-based access control, secure application architecture and
-          defensive engineering principles.
+          Production-deployed financial security laboratory demonstrating
+          JWT authentication, role-based authorization and PostgreSQL Row-Level
+          Security with Neon, Express and automated security verification.
         </p>
 
         <div className="hero-actions">
@@ -286,6 +286,49 @@ export default function ZeroTrustCaseStudy() {
               <p>Security behavior verified end-to-end in production</p>
             </div>
           </div>
+
+          <div className="case-grid">
+            <article>
+              <h3>0 Dependency Vulnerabilities</h3>
+              <p>
+                The production dependency tree was verified with npm audit
+                reporting zero known vulnerabilities.
+              </p>
+            </article>
+
+            <article>
+              <h3>Security Headers</h3>
+              <p>
+                Production responses include protections such as
+                X-Content-Type-Options, X-Frame-Options, Referrer-Policy and
+                Permissions-Policy.
+              </p>
+            </article>
+
+            <article>
+              <h3>No Sensitive Caching</h3>
+              <p>
+                Authentication and protected financial endpoints explicitly
+                return Cache-Control: no-store.
+              </p>
+            </article>
+
+            <article>
+              <h3>Production Deployment</h3>
+              <p>
+                The hardened API is deployed on Vercel and connected to Neon
+                PostgreSQL with runtime secrets stored as environment variables.
+              </p>
+            </article>
+          </div>
+
+          <p>
+            Authentication identities in this project are intentionally mocked
+            for demonstration and security-testing purposes. The portfolio case
+            study focuses on authorization, JWT verification, database-enforced
+            Row-Level Security and defensive API design rather than production
+            identity management.
+          </p>
         </div>
       </section>
 

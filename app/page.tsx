@@ -29,8 +29,8 @@ const projects = [
   {
     title: "Zero Trust API Financiera",
     description:
-      "Security-focused financial API demonstrating Zero Trust architecture, access control and defensive backend engineering.",
-    stack: ["Security", "API", "Zero Trust", "DevSecOps"],
+      "Production-deployed Zero Trust financial API with JWT authentication, Neon PostgreSQL RLS and automated security verification.",
+    stack: ["Zero Trust", "JWT", "PostgreSQL RLS", "Neon", "Express"],
     type: "Security · Backend Engineering",
     demo: "https://zero-trust-api-financiera.vercel.app",
     github: "https://github.com/josemanuelsuarez110/zero-trust-api-financiera",
