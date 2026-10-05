@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check:production": "node scripts/production-smoke.mjs"
+    "check:production": "node scripts/production-smoke.mjs",
+    "audit:prod": "npm audit --omit=dev --audit-level=high",
+    "audit:dev": "npm audit --audit-level=high || true"
   },
   "dependencies": {
-    "next": "16.3.2",
+    "next": "^16.3.8",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
@@ -23,5 +25,17 @@
     "eslint-config-next": "16.3.2",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "sharp": "^0.35.4",
+    "js-yaml": "^4.3.2",
+    "braces": "^3.0.3",
+    "micromatch": "^4.0.8",
+    "brace-expansion": {
+      "1": "^1.1.21",
+      "2": "^2.0.3",
+      "4": "^4.0.1",
+      "5": "^5.0.12"
+    }
   }
 }
