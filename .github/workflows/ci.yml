@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+      # ✅ Bloqueante: solo producción
+      - name: Security audit (production, blocking)
+        run: npm audit --omit=dev --audit-level=high
+      # ⚠️ Informativa: dev-only, excepción documentada braces GHSA-vfj7-8cjw-p6xm (sin parche, revisar 2026-11-12)
+      - name: Security audit (dev, informational)
+        continue-on-error: true
+        run: npm audit --audit-level=high || true
