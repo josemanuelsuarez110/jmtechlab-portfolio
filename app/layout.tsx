@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | JMTechLab",
   },
   description:
-    "QA Automation Engineer and SDET portfolio featuring production projects in Playwright, API testing, CI/CD, TypeScript, Python, quality engineering and secure software development.",
+    "QA Automation and web/API security testing by José Manuel Suárez. Explore certifications, services, reproducible projects and an updated professional CV.",
   keywords: [
     "José Manuel Suárez",
     "QA Automation Engineer",
