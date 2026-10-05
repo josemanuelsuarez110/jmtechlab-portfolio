@@ -32,8 +32,8 @@ const projects = [
   {
     title: "Zero Trust API Financiera",
     description:
-      "Production security API with JWT authentication, PostgreSQL Row-Level Security, automated authorization tests and verified Zero-Trust controls.",
-    stack: ["JWT", "PostgreSQL RLS", "Neon", "Express", "Security Testing"],
+      "Reproducible financial API laboratory with tenant isolation, PostgreSQL RLS, correlated audit events and automated security checks using connection pools of 1 and 4.",
+    stack: ["JWT", "PostgreSQL RLS", "GitHub Actions", "Express", "Security Testing"],
     type: "API Security · Backend · Testing",
     demo: "https://zero-trust-api-financiera.vercel.app",
     github: "https://github.com/josemanuelsuarez110/zero-trust-api-financiera",
@@ -73,7 +73,8 @@ export default function Home() {
             <a href="#projects">Projects</a>
             <a href="#expertise">Expertise</a>
             <a href="#experience">Experience</a>
-            <a href="#about">About</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#services">Services</a>
             <a href="#contact">Contact</a>
           </div>
 
@@ -98,9 +99,9 @@ export default function Home() {
         </h2>
 
         <p className="hero-description">
-          I build production-grade test automation, CI/CD pipelines and quality
-          engineering platforms using Playwright, TypeScript, Python and modern
-          software engineering practices.
+          I build test automation and validate web applications and APIs using
+          Playwright, TypeScript, Python and SQL. My work connects quality
+          engineering with authentication, authorization and security regression testing.
         </p>
 
         <div className="hero-actions">
@@ -131,7 +132,7 @@ export default function Home() {
           <span>API Testing</span>
           <span>CI/CD</span>
           <span>TypeScript · Python</span>
-          <span>Production Projects</span>
+          <span>Web &amp; API Security Testing</span>
         </div>
       </section>
 
@@ -278,8 +279,20 @@ export default function Home() {
         <div className="experience-list">
           <article className="experience-item">
             <div>
-              <p className="experience-date">2020 — 2025</p>
-              <h4>Treasurer · Local Government</h4>
+              <p className="experience-date">Nov 2022 — Dec 2025 · Remote</p>
+              <h4>QA Analyst · SIMELER INTERNATIONAL</h4>
+            </div>
+            <p>
+              Tested web applications and REST APIs in Agile/Scrum teams.
+              Built Playwright and Selenium scenarios, validated APIs with
+              Postman and investigated data discrepancies with SQL. Tracked
+              defects in Jira and verified fixes with developers.
+            </p>
+          </article>
+          <article className="experience-item">
+            <div>
+              <p className="experience-date">Apr 2020 — Apr 2025</p>
+              <h4>Administrator Treasurer · Liga Municipal Dominicana</h4>
             </div>
             <p>
               Managed treasury operations, budgets, financial controls,
@@ -325,6 +338,19 @@ export default function Home() {
         </div>
 
         <div className="certifications-grid">
+          {[
+            { code: "eWPTX", title: "Web Application Penetration Tester eXtreme", issuer: "INE Security", date: "February 2026" },
+            { code: "eJPT", title: "Junior Penetration Tester", issuer: "INE Security", date: "September 2026" },
+            { code: "eSOC", title: "Security Operations Certified", issuer: "INE Security", date: "July 2026" },
+            { code: "CYBERSECURITY", title: "Cybersecurity Certification Expert", issuer: "Certiplus", date: "September 2026" },
+          ].map((certification) => (
+            <article className="certification-card featured-cert" key={certification.title}>
+              <p className="project-type">{certification.code}</p>
+              <h4>{certification.title}</h4>
+              <p>{certification.issuer}</p>
+              <span>Issued {certification.date}</span>
+            </article>
+          ))}
           <article className="certification-card featured-cert">
             <p className="project-type">CYBERSECURITY · 80 HOURS</p>
             <h4>Cybersecurity — Advanced Level</h4>
@@ -450,6 +476,38 @@ export default function Home() {
               </a>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section className="section container" id="services">
+        <div className="section-heading">
+          <span>09</span>
+          <div>
+            <p className="section-label">SERVICES</p>
+            <h3>Practical testing with evidence you can review.</h3>
+          </div>
+        </div>
+        <div className="case-grid">
+          <article>
+            <h3>Web &amp; API Quality Assurance</h3>
+            <p>Functional, regression and integration testing with documented scenarios, reproducible defects and clear findings.</p>
+          </article>
+          <article>
+            <h3>Test Automation &amp; CI</h3>
+            <p>Playwright test suites and GitHub Actions workflows that provide repeatable checks and actionable failure reports.</p>
+          </article>
+          <article>
+            <h3>Authorization &amp; Security Regression</h3>
+            <p>Scoped testing of authentication, role permissions and data isolation in environments authorized by the client, with documented coverage and limitations.</p>
+          </article>
+          <article>
+            <h3>Data Validation &amp; Auditability</h3>
+            <p>SQL validation, API-to-database consistency checks and review of audit evidence, informed by experience in financial controls.</p>
+          </article>
+        </div>
+        <p className="case-intro">Spanish: native. English: fluent in professional conversations.</p>
+        <div className="hero-actions">
+          <a className="primary-button" href="mailto:josemanuelsuarez110@gmail.com">Discuss your testing needs</a>
         </div>
       </section>
 

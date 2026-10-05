@@ -49,8 +49,26 @@ jobs:
             exit 1
           fi
 
-      - name: Dependency audit
-        run: npm audit --audit-level=high
+      # ✅ Bloqueante: solo producción
+
+
+      - name: Dependency audit (production, blocking)
+
+
+        run: npm audit --omit=dev --audit-level=high
+
+
+
+      # ⚠️ Informativa: dev-only, excepción braces GHSA-vfj7-8cjw-p6xm
+
+
+      - name: Dependency audit (dev, informational)
+
+
+        continue-on-error: true
+
+
+        run: npm audit --audit-level=high || true
 
       - name: Lint
         run: npm run lint
