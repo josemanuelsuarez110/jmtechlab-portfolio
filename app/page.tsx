@@ -1,3 +1,4 @@
+import CertificationsGallery from '@/components/CertificationsGallery';
 const projects = [
   {
     title: "QA Sentinel",
@@ -337,46 +338,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="certifications-grid">
-          {[
-            { code: "eWPTX", title: "Web Application Penetration Tester eXtreme", issuer: "INE Security", date: "February 2026" },
-            { code: "eJPT", title: "Junior Penetration Tester", issuer: "INE Security", date: "September 2026" },
-            { code: "eSOC", title: "Security Operations Certified", issuer: "INE Security", date: "July 2026" },
-            { code: "CYBERSECURITY", title: "Cybersecurity Certification Expert", issuer: "Certiplus", date: "September 2026" },
-          ].map((certification) => (
-            <article className="certification-card featured-cert" key={certification.title}>
-              <p className="project-type">{certification.code}</p>
-              <h4>{certification.title}</h4>
-              <p>{certification.issuer}</p>
-              <span>Issued {certification.date}</span>
-            </article>
-          ))}
-          <article className="certification-card featured-cert">
-            <p className="project-type">CYBERSECURITY · 80 HOURS</p>
-            <h4>Cybersecurity — Advanced Level</h4>
-            <p>
-              INDOTEL · Inter-American Development Bank (IDB) · Cymetria Group SAS
-            </p>
-            <span>Issued August 2026</span>
-          </article>
-
-          <article className="certification-card featured-cert">
-            <p className="project-type">CYBERSECURITY · 80 HOURS</p>
-            <h4>Cybersecurity — Intermediate Level</h4>
-            <p>
-              INDOTEL · Inter-American Development Bank (IDB) · Cymetria Group SAS
-            </p>
-            <span>Issued April 2026</span>
-          </article>
-
-          <article className="certification-card">
-            <h4>Additional Training</h4>
-            <p>
-              ISO 27001 · Ethical Hacking · Cisco Cybersecurity · AI Fundamentals
-              · Linux · Quality and technology training.
-            </p>
-          </article>
-        </div>
+        <CertificationsGallery />
       </section>
 
 
